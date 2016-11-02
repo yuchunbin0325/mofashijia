@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+ <link rel="stylesheet" type="text/css" href="css/register.css" />
+<body>
+    <!-- 整个页面大框 -->
+     <div id="wrap">
+        <!-- 顶部导航 -->
+        <!--灰白色导航条-->
+        <div id="login" style="height: 28px;margin: 0 auto; line-height: 28px;background:rgb(249,249,249);overflow: hidden;">
+           <div class="login_box">
+              <span style="float:left">欢迎来到膜法世家官方网站</span>
+              <span class="right">
+                  <a href="login.php">登录</a>
+                  |
+                  <a href="register.php">注册</a>
+                  |
+                  <a class="oder" title="查看购物车" href="#">我的购物车</a>
+                  |
+                  <a href="#">收藏本站</a>
+                  |
+                  <a href="#">资讯订阅</a>
+              </span>
+           </div>
+        </div>
+        <!--导航logo-->
+        <div id="navbar" style="border: 0px solid red;height: 142px;background: #fff;">
+			<div style="width: 1024px;height: 102px;">			
+			      <div style="float: left;">
+			      	 <a href="index.php" style="overflow: hidden;display: block;margin-top: 20px;"></a>
+			      	 <img src="img/TB2ieNlfp368609005.png" alt="膜法世家官网" height="60px"/>
+			      </div>							
+			      <div style="float: right;">
+			      	 <div class="box">
+			      	 	<form id="form1" action="all_goods.php" method="post">			      	 		
+			      	 		<input class="input1" type="text" value="" maxlength="40" placeholder="搜索您需要的商品" name="title"/ >
+			      	 		<div class="glass">
+			      	 			<img src="img/searchlogo.png" style="margin-top: 10px;"/>
+			      	 		</div>
+			      	 	</form>
+			      	 </div>
+			      	  <div style="float: right;">
+			      	  	   <img src="img/368609005.jpg" style="margin-top:15px;width: 200px;" />
+			      	  </div>
+			      </div>
+			</div>
+			<!--绿色导航条-->
+			<div style="height: 40px;background: #0d3b1c;">
+				<div id="green_box">
+					<!--防伪查询-->
+					<div id="select">
+						<a href="TYPE-R.php" style="color: #fff;text-decoration: none;">防伪查询</a>					</div>	
+					<!--文字-->
+					<ul id="navgreen">
+						<li class="menu-item">
+							<a href="index.php">膜法首页</a>
+						</li>
+						<li class="menu-item">
+							<a href="shop_index.php">官方商城</a>
+						</li>
+						<li class="menu-item menu-item-display" >
+							<a href="all_goods.php">所有商品</a>
+							<ul class="sub-menu-cat" style="display: none;" >
+								<li class="menu-item-cat menu-item-cat-ti-1">
+									<a>产品分类</a>
+								</li>
+								<li class="menu-item-cat menu-item-cat-ti-2">
+									<a>功效分类</a>
+								</li>
+								<li class="menu-item-cat menu-item-cat-ti-2">
+									<a>全膜护理</a>
+								</li>
+								<li class="menu-item-cat menu-item-cat-ti-2">
+									<a>基础护理</a>
+								</li>
+								<li class="menu-item-cat menu-item-cat-ti-2">
+									<a>肌肤类型</a>
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">绿豆清肌系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">祛痘淡印</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">水洗面膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">面膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">干性</a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">樱桃补水系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">美白亮肤</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">面膜贴</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">眼部护理</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">油性</a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">金沙紧致系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">补水保湿</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">眼膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">洁面</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">中性</a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">白松露亮白系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">清爽控油</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">唇膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">爽肤</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">混合性</a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">黑面膜吸黑系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">弹力紧致</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">手足膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">精华</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">熟龄性</a>   
+								</li>
+								<!------->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">面膜贴系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">修复舒缓</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">颈膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">乳液</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">痘痘肌</a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">菩提水润系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">熟龄修复</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">体膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">面霜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">阿纳斯系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">隔离防晒</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">发膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">卸妆</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">冰川泥系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">祛黑眼圈</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">鼻膜</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">雪参亮肤系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<li class=" menu-item-cat-2 "></li>
+								<li class=" menu-item-cat-2 "></li>
+								<li class=" menu-item-cat-2 "></li>
+								<!---->
+								<li class="menu-item-cat menu-item-cat-1 menu-item-cat-1-6 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id=">睡莲系列</a>   
+								</li>
+								<li class="menu-item-cat menu-item-cat-2 ">
+									<!--缺少id-->
+									<a href="all_goods.php?id="></a>   
+								</li>
+								<li class=" menu-item-cat-2 "></li>																
+								<li class=" menu-item-cat-2 "></li>																	
+								<li class=" menu-item-cat-2 "></li>	
+								<!---->
+								<li class=" menu-item-cat-bt"></li>
+								
+							</ul>
+						</li>
+						<li class="menu-item" id="mfpp">
+							<a href="brand.php">膜法品牌</a>
+							<ul class="sub-menu" style="display: none;">
+								<li class="menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">膜法故事</a>
+								</li>
+								<li class="menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">膜护理之旅</a>
+								</li>
+								<li class="menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">品牌历程</a>
+								</li>
+								<li class="menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">品牌历程</a>
+								</li>
+								<li class="menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">魔发动态</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item" id="aboutOurs">
+							<a href="about_ours.php">关于我们</a>
+							<ul class="sub_menuO sub-menu" style="display: none;">
+								<li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">公司简介</a>
+								</li>
+								<li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">加入悦耳</a>
+								</li>
+								<li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+									<a href="all_goods.php?id=">练习我们</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="join.php">代理加盟</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+        </div>
+        <!-- 中间内容-->
+        <div id="content">
+            <div id="left">
+               <ul id="user_nav">
+                  <li class="user_li"><a href="#">会员登录</a></li> 
+                  <li class="user_li"><a href="register.php">会员注册</a></li>
+                  <li class="user_li"><a href="#">找回密码</a></li> 
+               </ul>
+            </div>
+            <div id="right">
+              <p class="p1">
+                  <label for="user_name" id="user_nameLabel" class="pass-label user_name">用户名</label>
+                  <input id="user_name" class="inp" type="text" name="name" value="">
+              </p>
+              <p class="p1">
+                  <label for="E-mail" id="E-mailLabel" class="pass-label E-mail">E-mail</label>
+                  <input id="E-mail" class="inp" type="text" name="name" value="">
+                  <p>(建议使用QQ邮箱，其他邮箱亦可)</p>
+              </p>
+              <p class="p1">
+                  <label for="user_pwd" id="user_pwdLabel" class="pass-label user_pwd">密码</label>
+                  <input id="user_pwd" class="inp" type="text" name="name" value="">
+              </p>
+              <p class="p1">
+                  <label for="confirm_pwd" id="confirm_pwdLabel" class="pass-label confirm_pwd">确认密码</label>
+                  <input id="confirm_pwd" class="inp" type="text" name="name" value="">
+                  <p>(密码请设置6-16位数字与字母，字母不分大小写)</p>
+              </p>
+              <p class="p1">
+                  <label for="auth_code" id="auth_codeLabel" class="pass-label auth_code">验证码</label>
+                  <input id="auth_code" class="inp" type="text" name="name" value="">
+              </p>
+              <p class="p1">
+                <input class="submit" type="button" name="name" value="注册">
+              </p>
+
+            </div>
+        </div>
+        <!--  底部结尾-->
+         <div id="bottomNav">
+         	<div>
+         		<img src="img/bottom.jpg" width="990" height="165" position: "relative"/>
+         		<div class="footer_declare">
+         			<a href="链接跳转" target="_blank" title="站长统计">
+         				<img src="img/pic.gif" vspace="0" border="0" hspace="0"/>
+         			</a>
+         		</div>
+         	</div>
+         </div>
+
+     </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <script type="text/javascript" src="js/remove_all_goods.js" ></script>
+     <script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript">
+      
+
+     </script>
+     
+</body>
+</html>

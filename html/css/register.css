@@ -1,0 +1,5 @@
+#content{width: 960px;padding: 0;overflow: hidden;margin-top: 8px;height: 435px;}
+#left{height:163px;width: 140px;position: fixed;z-index: 5004;display: block;top: 150px;margin-top: 50px;}
+#user_nav{display: inline-block;line-height: 40px;}
+.user_li{margin-top: 10px;width: 112px;background: #1F5D33;border-radius: 7px;margin-left: 50px;}
+.user_li a{color: #FFFFFF;padding: 2px 24px;font-size: 16px;height: 36px;}
