@@ -5,7 +5,7 @@
       die($mysql->connect_errno);
     }
     $mysql->query("set names utf8");
-    $sqlstr = "select * from allgoods_title";
+    $sqlstr = "select * from goods";
 
     $result = $mysql->query($sqlstr);
     // var_dump($result);
