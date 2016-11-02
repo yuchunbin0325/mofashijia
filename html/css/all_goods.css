@@ -1,0 +1,59 @@
+body{font-size: 14px;font-family: "微软雅黑";font-weight: bold;}
+*{padding:0;margin: 0;list-style: none;}
+div{margin: 0 auto;padding: 0;}
+#wrap{width: 100%;height: 100%};
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+/*灰白导航条*/
+#login{margin: 0 auto; }
+.login_box{width: 1024px;height: 28px;margin: 0 auto;}
+.right{float: right;}
+.login_box .right a{color:#0d3a1d;text-decoration: none;}
+.login_box .oder{background: url(../img/shop_index_05.jpg) no-repeat;padding-left: 18px;}
+/*导航logo*/
+#navbar .box{float: right;width: 340px;height: 40px;border-left: 1px solid #0d3d1e;
+border-top:1px solid #0d3d1e; border-bottom: 1px solid #0d3d1e;margin-left: 20px; margin-top: 28px;}
+.input1{width: 280px;height: 33px;margin-left:10px;border: none;font-size: inherit;
+float: left;margin-top: 4px;}
+.glass{float: right;border-left: 1px solid #0d3d1e;border-right: 1px solid #0d3d1e;height: 40px;
+width: 40px;line-height: 44px;text-align: center;}
+/*绿色导航条*/
+#green_box{line-height: 40px;position: relative;width: 1024px;text-align: left;}
+#select{display: inline-block;height: 40px;position: absolute;right: 0;font-size: 16px;
+padding:0 20px; background: #1f5d33;}
+/*文字*/
+#navgreen{list-style: none;display: inline-block;line-height: 40px;padding-left: 0;}
+.menu-item{width: 112px;display: inline-block;height: 40px;position: relative;top:0;float: left;text-align: center;}
+.menu-item a{color: #fff;font-size: 16px;height: 36px;font-weight: inherit;}
+.sub-menu-cat{position: absolute;background: #0d3b1c;top: 40px;left: 0;
+width: 522px;z-index: 9999;opacity: 0.92;list-style: none;float: left;padding-left: 0;}
+.menu-item-cat-ti-1{width: 138px;display: inline-block;height: 30px;position: relative;top: 0;float: left;background: #1a522c;}
+.menu-item-cat-ti-2{width: 96px;display: inline-block;height: 30px;position: relative;top: 0;float: left;background: #1A522C;}
+.menu-item-cat-ti-1 a{padding: 2px 40px;}
+.sub-menu-cat a{font-size: 14px; height: 26px;line-height: 32px;}
+.menu-item:hover{background-color: #1A522C;color:#fff;}
+.menu-item-cat-1{width: 138px;display: inline-block;height: 30px;position: relative;top: 0;float: left;}
+/*.menu-item-cat-1-6{padding: 2px 26px;}*/
+.menu-item-cat-2{width: 96px;display: inline-block;height: 30px;position: relative;top: 0;float: left;}
+/* 膜法品牌*/
+.sub-menu{ position: absolute;background-color: #0d3b1c;top: 40px;left: 0px;width: 112px;z-index: 9999;opacity: 0.92;}
+.menu-item-type-taxonomy:hover{background-color:#1A522C;}
+.menu-item-cat:hover{background-color:#1A522C;}
+.menu-item-cat-bt{width: 522px;display: inline-block;height: 15px;position: relative;top: 0;float: left;background: #144724;}
+/*底部*/
+/*#bottomNav{margin: 0 auto;text-align: center;margin-top: 0;width: 100%;height: 165px;background: #FAFAFA;
+border-top: 1px solid #e5e5e5;position: relative;}
+.footer_declare{position: absolute;margin-top: -71px;margin-left: 860px;width: 971px;}
+#bottomNav img{border: 0;}*/
+/* 中间显示产品标题*/
+
+.blank{width:1000px;height: 10px;clear: both;}
+.body_box{width: 1000px;height: auto;overflow: hidden;padding: 0px 20px;}
+.class_box{width: 1000px;background-color: #f7f5f5;overflow: hidden;}
+#class_box ul{float: left;width:100%;}
+#class_box li{float: left;width: 120px;line-height: 35px;}
+#class_box .class_title a{color: #0d3a1d;}
+#class_box .class_5 li{width: 16%;}
+/* 中间product */
+.product{width: 1000px;height: auto;overflow: hidden;margin-top: 10px;}
+.product_by{width: 1000px;border: 1px solid #FFFFFF;height: auto;overflow: hidden;background-color: #FFFFFF;}
