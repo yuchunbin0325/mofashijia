@@ -80,9 +80,11 @@ $.ajax({
     }
     // 获取table第二行tr里的三个td：
         var trs2 = $(".czlh_tb").children()[1].children;
-        var text1 = my[0].shop_index_title.split(",");
+
         // console.log(text1[0]);
           for (var i = 0; i < trs2.length; i++) {
+            var text1 = my[i].shop_index_title.split(",");
+            console.log(text1);
             var span = $("<span/>");
             span.css({fontSize:"20px",color:"#1c561b"})
             $(trs2[i]).append(span);
@@ -95,6 +97,7 @@ $.ajax({
               })
               // console.log(text1[0]);
                 for (var i = 0; i < trs3.length; i++) {
+                  var text1 = my[i].shop_index_title.split(",");
                   var a1 = $("<a/>");
                   $(trs3[i]).append(a1);
                   var span1 = $("<span/>");
@@ -146,9 +149,9 @@ $.ajax({
        }
        // 获取table第二行tr里的三个td：
            var trs2 = zdzb_tb1.children()[1].children;
-           var text1 = my[0].zdzb.split(",");
            // console.log(text1[0]);
              for (var i = 0; i < trs2.length; i++) {
+               var text1 = my[i].zdzb.split(",");
                var span = $("<span/>");
                span.css({fontSize:"20px",color:"#1c561b"})
                $(trs2[i]).append(span);
@@ -161,6 +164,7 @@ $.ajax({
            })
            // console.log(text1[0]);
              for (var i = 0; i < trs3.length; i++) {
+               var text1 = my[i].zdzb.split(",");
                var a1 = $("<a/>");
                $(trs3[i]).append(a1);
                var span1 = $("<span/>");
@@ -205,47 +209,50 @@ $.ajax({
          var a = $("<a/>");
          $(trs1[i]).append(a);
          var img = $("<img/>");
+         img.css({width:"300px",height:"300px"})
          img[0].src = "../../php/img/" + my[i].shop_index_img;
          a.append(img);
        }
        // 获取table第二行tr里的三个td：
            var trs2 = zdzb_tb2.children()[1].children;
-           var text1 = my[0].shop_index_title.split(",");
            // console.log(text1[0]);
              for (var i = 0; i < trs2.length; i++) {
+               var text1 = my[i].shop_index_title.split(",");
                var span = $("<span/>");
                span.css({fontSize:"20px",color:"#1c561b"})
                $(trs2[i]).append(span);
                $(span[0]).text(text1[0]);
              }
-             // 获取table第 3 行tr里的三个td：
-                 var trs3 = zdzb_tb2.children()[2].children;
-                 $(trs3).css({
-                   padding:"3px 0"
-                 })
-                 // console.log(text1[0]);
-                   for (var i = 0; i < trs3.length; i++) {
-                     var a1 = $("<a/>");
-                     $(trs3[i]).append(a1);
-                     var span1 = $("<span/>");
-                     span1.css({fontSize:"15px",color:"#1c561b"})
-                     a1.append(span1);
-                     $(span1[0]).text(text1[1]);
-                   }
-                   var trs4 = zdzb_tb2.children()[3].children;
-                   $(trs4).css({
-                     padding:"6px 0"
-                   })
-                   for(var i = 0;i < trs4.length;i ++){
-                     var span2 = $("<sapn/>");
-                     span2.css({fontSize:"28px",color:"#1c561b"})
-                     $(span2[0]).text(my[i].shop_index_price);
-                     $(trs4[i]).append(span2);
-                     var span3 = $("<span/>");
-                     $(span3[0]).text(my[i].shop_index_price1);
-                     $(trs4[i]).append(span3);
-                     span3.css({fontSize:"22px",color:"#1c561b"})
-                   }
+       // 获取table第 3 行tr里的三个td：
+       var trs3 = zdzb_tb2.children()[2].children;
+       $(trs3).css({
+         padding:"3px 0"
+       })
+       // console.log(text1[0]);
+         for (var i = 0; i < trs3.length; i++) {
+           var text1 = my[i].shop_index_title.split(",");
+           var a1 = $("<a/>");
+           $(trs3[i]).append(a1);
+           var span1 = $("<span/>");
+           span1.css({fontSize:"15px",color:"#1c561b",display:"inline-block",width:"227px",lineHeight:"1.2"})
+           a1.append(span1);
+           $(span1[0]).text(text1[1]);
+         }
+       // 第四行
+           var trs4 = zdzb_tb2.children()[3].children;
+           $(trs4).css({
+             padding:"6px 0"
+           })
+           for(var i = 0;i < trs4.length;i ++){
+             var span2 = $("<sapn/>");
+             span2.css({fontSize:"28px",color:"#1c561b"})
+             $(span2[0]).text(my[i].shop_index_price);
+             $(trs4[i]).append(span2);
+             var span3 = $("<span/>");
+             $(span3[0]).text(my[i].shop_index_price1);
+             $(trs4[i]).append(span3);
+             span3.css({fontSize:"22px",color:"#1c561b"})
+           }
       }
     });
         // console.log(my);
