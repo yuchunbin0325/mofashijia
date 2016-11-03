@@ -4,7 +4,7 @@
     die($mysql->connect_errno);
   }
   $mysql->query('set names utf8');
-  $sqlstr = 'select * from shop_index_czlh';
+  $sqlstr = 'select * from shop_index_zdzb';
 	$result=$mysql->query($sqlstr);
 
 	$myArray = array();

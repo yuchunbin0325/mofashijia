@@ -47,7 +47,56 @@ $.ajax({
   url:"../../php/code/goods.php",
   success:function(obj){
         var my = JSON.parse(obj);
+        // console.log(my.length);
+        var product_by = $(".product_by");
+          for (var i = 0; i < my.length; i++) {
+            var div = $("<div/>");
+            div[0].data = my[i];
+            div.on("click",function(){
+              window.location.href = "goods.html?id=" + this.data.id;
+            })
+            div.addClass("product_div");
+            // 获取所有div 并移入时移动效果
+            var divs = $(".product_div");
+            for (var j = 0; j < divs.length; j++) {
+              $(divs[j]).hover(function() {
+                $(this).animate({top:"2px",left:"2px"},100)
+              }, function() {
+                $(this).animate({top:"0px",left:"0px"},100)
+              });
+            }
 
+            // div.text(my[i].title);
+            div.appendTo(product_by);
+            var ul = $("<ul/>");
+            div.append(ul);
+            var li = $("<li/>");
+            ul.append(li);
+            var a1 = $("<a/>");
+            // a1.text(my[i].price);
+            var img = $("<img/>");
+            img[0].src = "../../php/img/" + my[i].goods_pic.split(",")[0];
+            a1.append(img);
+            li.append(a1);
+            var a2 = $("<a/>");
+            a2.addClass("aTwo");
+            a2.text(my[i].title);
+            a2.hover(function() {
+              $(this).css({color:"red"});
+            }, function() {
+              $(this).css({color:"#0d3a1d"});
+            });
+            li.append(a2);
+            var span1 = $("<span/>");
+            span1.text("本店售价: ");
+            li.append(span1);
+            var span2 = $("<span/>");
+            span2.css({paddingLeft:"4px"})
+            span2.text(my[i].price);
+            li.append(span2);
+            var br = $("<br/>");
+            li.append(br);
+          }
 
       }
     });

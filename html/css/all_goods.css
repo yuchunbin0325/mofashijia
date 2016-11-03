@@ -45,8 +45,8 @@ width: 522px;z-index: 9999;opacity: 0.92;list-style: none;float: left;padding-le
 border-top: 1px solid #e5e5e5;position: relative;}
 .footer_declare{position: absolute;margin-top: -71px;margin-left: 860px;width: 971px;}
 #bottomNav img{border: 0;}*/
-/* 中间显示产品标题*/
 
+/* 中间显示产品标题*/
 .blank{width:1000px;height: 10px;clear: both;}
 .body_box{width: 1000px;height: auto;overflow: hidden;padding: 0px 20px;}
 .class_box{width: 1000px;background-color: #f7f5f5;overflow: hidden;}
@@ -54,6 +54,10 @@ border-top: 1px solid #e5e5e5;position: relative;}
 #class_box li{float: left;width: 120px;line-height: 35px;}
 #class_box .class_title a{color: #0d3a1d;}
 #class_box .class_5 li{width: 16%;}
-/* 中间product */
+/* 中间标题下的product */
 .product{width: 1000px;height: auto;overflow: hidden;margin-top: 10px;}
 .product_by{width: 1000px;border: 1px solid #FFFFFF;height: auto;overflow: hidden;background-color: #FFFFFF;}
+.product_div{width: 182px;height: 250px;overflow: hidden;float: left;padding: 15px 0px 0px 16px;cursor: pointer;position: relative;}
+.product_div li{width: 180px;text-align: center;padding-bottom: 2px;}
+.product_div li img{width: 180px;height: 180px;border:0;}
+.product_div li .aTwo{color:#0d3a1d;display: block;height: 40px;margin-top: 5px;margin-bottom: 5px;line-height: 20px;text-align: left;padding-left: 10px;padding-right: 10px;overflow: hidden;}
